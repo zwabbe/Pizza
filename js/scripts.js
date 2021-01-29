@@ -7,9 +7,9 @@
 
 
 
-function Pizza(size, toppings) {
+function Pizza(size, topping) {
   this.size = size;
-  this.toppings = [];
+  this.toppings = topping;
 }
 
 Pizza.prototype.calculateOrder = function() {
@@ -19,25 +19,18 @@ Pizza.prototype.calculateOrder = function() {
   }
 }
 
-
 //UI logic
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-
     var size = $("input[name=pizzaSize]:checked").val();
-    var toppings = $("input[name=pizzaTopping]:checked").val();
-    let customer = new Pizza(size, toppings);
+    var topping = $("input:checkbox[name=pizzaTopping]:checked").map(function() {
+      return this.value;
+    }).get();
+
+    let customer = new Pizza(size, topping);
     console.log(customer)
   });
-
-
-
-
-
-
-
-
 });
