@@ -5,7 +5,6 @@
   <title></title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.5.1.js"></script>
@@ -14,14 +13,12 @@
 </head>
 
 <body>
-
   <div>
     <form id="pizzaSizes">
       <tr>
         <td>
           <label for="smallSize" class="sizeChart">Small</label>
           <input type="radio" id="smallSize" name="pizzaSize" value='small' :checked>
-
           <label for="medSize" class="sizeChart">Medium</label>
           <input type="radio" id='medSize' name="pizzaSize" value="medium">
           <label for="largeSize " class="sizeChart">Large</label>
@@ -34,13 +31,10 @@
         <td>
           <label for="Pepperoni" class="">Pepperoni</label>
           <input type="checkbox" id="Pepperoni" name="pizzaTopping" value="Pepperoni" :checked>
-
           <label for="Mushroom" class="">Mushroom</label>
           <input type="checkbox" id="Mushroom" name="pizzaTopping" value="Mushroom" :checked>
-
           <label for="Anchovies" class="">Anchovies</label>
           <input type="checkbox" id="Anchovies" name="pizzaTopping" value="Anchovies" :checked>
-
           <label for="Bellpeppers" class="">Bellpeppers</label>
           <input type="checkbox" id="Bellpeppers" name="pizzaTopping" value="Bellpeppers" :checked>
         </td>
@@ -54,11 +48,6 @@
     <p>You ordered a <span id="showPizzaSize"></span>, with <span id="showToppings"></span>!</p>
     <p id="showTotal"> </p>
   </div>
-
-
-
-
-
 </body>
 
 </html>
