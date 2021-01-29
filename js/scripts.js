@@ -15,8 +15,7 @@ Pizza.prototype.calculateOrder = function() {
     this.total += 4;
   } else(this.size === "large")
   this.total += 5;
-
-  //the loop through toppings and adds 1 dollar for each
+  //the loop through toppings and adds 1 dollar for each topping that was checked prior to submit
   for (i = 0; i <= this.toppings.length; i++) {
     this.total += 1;
   }
@@ -39,6 +38,7 @@ $(document).ready(function() {
     }).get();
     let customer = new Pizza(size, toppings, total)
     customer.calculateOrder();
+    //Would like to move this out into it's own function. But we live here for now. 
     $("#pizzaDisplay").show();
     $("#showPizzaSize").text(size);
     $("#showToppings").text(toppings);
