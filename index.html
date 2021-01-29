@@ -2,18 +2,37 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
 
 </head>
 
 <body>
+
+  <div>
+    <form id="pizzaSize">
+      <tr>
+        <td>
+          <label for="smallSize" class="sizeChart">Small</label>
+          <input type="radio" id="smallSize" name="q1" value=".50" :checked>
+
+          <label for="medSize" class="sizeChart">Medium</label>
+          <input type="radio" id='medSize' name="q1" value=".50">
+
+          <label for="largeSize " class="sizeChart">Large</label>
+          <input type="radio" id="largeSize" name="q1" value=".50">
+        </td>
+      </tr>
+      <button class="btn submit" id="submitButton">Submit</button>
+    </form>
+
+
 
 </body>
 
