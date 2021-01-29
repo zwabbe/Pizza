@@ -1,4 +1,4 @@
-# Beep boop Friday project!
+# Friday project!
 
 
 
@@ -17,7 +17,8 @@ Jeremy Miller
 * _Photoshop CC_
 
 
-## Description 
+
+# Description 
 
 Welcome to my fourth Friday Project! I hope you enjoy your stay :)
 
@@ -27,30 +28,33 @@ Check out my page and repos here:
 https://github.com/zwabbe
 
 
-## Setup/Installation 
+# Setup/Installation 
 
-To use the website simply just input a number and see what results pop out!!
+This website is very straight forward to use. And demonstrates the use of inputs, prototypes and objects in the form of a Pizza menu. 
+
+## How to use:
+* Select your desire Pizza size and the topping options presented. 
+* One selected press Submit to show results of your order. 
 
 
-If you wish to make changes to the project then follow these steps: 
+
+## If you wish to make changes to the project then follow these steps: 
 
 * Clone the repo from this link: https://github.com/zwabbe/pizza.git
 
-* If you just wish to view the site then open the index.html file!
-
- * If you wish to edit the scripts or styles for the page the then I suggest using downloading VScode! Or just using your favorite text editor! :)
+ * Open the desired files with your favorite text editor.  I suggest downloading VScode or just using your favorite text editor! :)
 
 
-## Known bugs / Issues
+# Known bugs / Issues
 
 
+Zero, zilch, nada! Bada bing bada boom. 
 
-## Specifications
+
+# Specifications
 
 ```
 Describe: Pizza()
-
-
 
 Test: Pizza variable "size" to change depending if Small , Med, or Large radio button selected.
 
@@ -84,10 +88,10 @@ Test: Output to show customers selected size, toppings and total cost for their 
         Results: Works!
 ```
 
-## License 
+# License 
+[CC0](https://github.com/idleberg/Creative-Commons-Markdown/blob/master/4.0/zero.markdown) Jer Miller
 
-
-## Contact information
+# Contact information
 
 If you have any questions or concerns shoot me an [Email](mailto:gkstaff@gmail.com) ! Or shoot me a message through Discord:Zwabbe@7788.
 
