@@ -16,20 +16,38 @@
 <body>
 
   <div>
-    <form id="pizzaSize">
+    <form id="pizzaSizes">
       <tr>
         <td>
           <label for="smallSize" class="sizeChart">Small</label>
-          <input type="radio" id="smallSize" name="q1" value=".50" :checked>
+          <input type="radio" id="smallSize" name="pizzaSize" value='small' :checked>
 
           <label for="medSize" class="sizeChart">Medium</label>
-          <input type="radio" id='medSize' name="q1" value=".50">
-
+          <input type="radio" id='medSize' name="pizzaSize" value="medium">
           <label for="largeSize " class="sizeChart">Large</label>
-          <input type="radio" id="largeSize" name="q1" value=".50">
+          <input type="radio" id="largeSize" name="pizzaSize" value="large">
+        </td>
+        <button class="btn submit" id="submitButton">Submit</button>
+      </tr>
+    </form>
+    <form id="pizzaToppings">
+      <tr>
+        <td>
+          <label for="Pepperoni" class="">Topping1</label>
+          <input type="checkbox" id="Pepperoni" name="pizzaTopping" value="Pepperoni" :checked>
+
+          <label for="Mushroom" class="">Topping2</label>
+          <input type="checkbox" id="Mushroom" name="pizzaTopping" value="Mushroom" :checked>
+
+          <label for="Anchovies" class="">Topping3</label>
+          <input type="checkbox" id="Anchovies" name="pizzaTopping" value="Anchovies" :checked>
+
+          <label for="Bellpeppers" class="">Topping4</label>
+          <input type="checkbox" id="Bellpeppers" name="pizzaTopping" value="Bellpeppers" :checked>
         </td>
       </tr>
-      <button class="btn submit" id="submitButton">Submit</button>
+
+
     </form>
 
 
