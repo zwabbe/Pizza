@@ -1,21 +1,21 @@
 //Business logic
-
-
-
-
-
-
-
-
-function Pizza(size, topping) {
+function Pizza(size, toppings, cost) {
   this.size = size;
-  this.toppings = topping;
+  this.toppings = toppings;
+  this.baseCost = 10;
 }
 
 Pizza.prototype.calculateOrder = function() {
-  if (size === '2') {
-    this.size = 2;
-    console.log("Hi");
+  // checks the size of pizza and adds the price to this.cost
+  if (this.size === "small") {
+    this.baseCost += 3;
+  } else if (this.size === "medium") {
+    this.baseCost += 4;
+  } else if (this.size === "large") {
+    this.baseCost += 5;
+  }
+  for (i = 0; i <= this.toppings.length; i++) {
+    this.baseCost += 1;
   }
 }
 
@@ -26,11 +26,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     var size = $("input[name=pizzaSize]:checked").val();
-    var topping = $("input:checkbox[name=pizzaTopping]:checked").map(function() {
+    var toppings = $("input:checkbox[name=pizzaTopping]:checked").map(function() {
       return this.value;
     }).get();
+    let customer = new Pizza(size, toppings);
 
-    let customer = new Pizza(size, topping);
+    customer.calculateOrder();
     console.log(customer)
   });
 });
