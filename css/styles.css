@@ -1,7 +1,16 @@
 body {
-  background-color: gray;
+  background-color: #b19999;
 }
 
 #pizzaDisplay {
   display: none;
+}
+
+#submitButton {
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
 }

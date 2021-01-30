@@ -18,11 +18,11 @@
       <tr>
         <td>
           <label for="smallSize" class="sizeChart">Small</label>
-          <input type="radio" id="smallSize" name="pizzaSize" value='small' :checked>
+          <input type="radio" id="smallSize" name="pizzaSize" value="Small">
           <label for="medSize" class="sizeChart">Medium</label>
-          <input type="radio" id='medSize' name="pizzaSize" value="medium">
-          <label for="largeSize " class="sizeChart">Large</label>
-          <input type="radio" id="largeSize" name="pizzaSize" value="large">
+          <input type="radio" id='medSize' name="pizzaSize" value="Medium">
+          <label for="largeSize" class="sizeChart">Large</label>
+          <input type="radio" id="largeSize" name="pizzaSize" value="Large">
         </td>
       </tr>
     </form>
@@ -44,9 +44,12 @@
   <button class="btn submit" id="submitButton">Submit</button>
   </form>
 
+
+  <h1>Your Order:</h1>
   <div id=pizzaDisplay>
-    <p>You ordered a <span id="showPizzaSize"></span>, with <span id="showToppings"></span>!</p>
-    <p id="showTotal"> </p>
+    <p>You ordered a <span id="showPizzaSize"></span> pizza, with <span id="showToppings"></span>!</p>
+    <h2>Total:</h2>
+    <p><span id="showTotal"></span> USD</p>
   </div>
 </body>
 
