@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Pizza Hurt™</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
-
 </head>
 
 <body>
-  <div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pizza Time!</h1>
+    </div>
     <form id="pizzaSizes">
       <tr>
         <td>
@@ -39,17 +41,16 @@
           <input type="checkbox" id="Bellpeppers" name="pizzaTopping" value="Bellpeppers" :checked>
         </td>
       </tr>
-  </div>
-
-  <button class="btn submit" id="submitButton">Submit</button>
-  </form>
-
-
-  <h1>Your Order:</h1>
-  <div id=pizzaDisplay>
-    <p>You ordered a <span id="showPizzaSize"></span> pizza, with <span id="showToppings"></span>!</p>
-    <h2>Total:</h2>
-    <p><span id="showTotal"></span> USD</p>
+      <div class="buttonDiv">
+        <button class="btn submit" id="submitButton">Submit</button>
+      </div>
+    </form>
+    <div id="pizzaDisplay" *>
+      <h2>Your Order:</h2>
+      <p>You ordered a <span id="showPizzaSize"></span> pizza, with <span id="showToppings"></span>!</p>
+      <h2>Total:</h2>
+      <p><span id="showTotal"></span> USD</p>
+    </div>
   </div>
 </body>
 

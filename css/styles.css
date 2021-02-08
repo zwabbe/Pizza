@@ -1,9 +1,26 @@
 body {
-  background-color: #b19999;
+  background-color: rgb(173, 107, 107);
+}
+.jumbotron{
+  text-align: center;
+  background-color:yellow;
 }
 
 #pizzaDisplay {
   display: none;
+}
+h1{
+  font-weight:900;
+  font-size: 70px;
+}
+h2{
+  font-weight:900;
+  font-size: 70px;
+  color: aliceblue;
+}
+
+.divDiv{
+  text-align: center;
 }
 
 #submitButton {
@@ -13,4 +30,9 @@ body {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 50%;
+}
+
+
+#pizzaSizes, #pizzaToppings, #pizzaDisplay{
+text-align: center;
 }

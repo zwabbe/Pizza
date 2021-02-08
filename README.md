@@ -53,27 +53,15 @@ Zero, zilch, nada! Bada bing bada boom.
 # Specifications
 
 ```
-Describe: Pizza()
+Describe: Pizza(size, toppings)
 
-Test: Pizza variable "size" to change depending if Small , Med, or Large radio button selected.
-    Expect: Selecting small changes Var Size.toEqual("small").
-        Results: Working!!
+Test: "Selection of a Large pizza and Pepperoni to create new instance of Pizza with size and topping properties." 
+Expect: newPizza.toEqual("size:large, toppings:pepperoni, total:0")
 
-Test: Click all 4 toppings and run a loop that creates a Var called toppings with array of selected toppings.
-    Expect: Var toppings to equal [topping1, topping2,topping3,topping4]
-        Results: Working!!
 
-Test: Create new Pizza object with properties from size and toppings while also adding a base price for the Pizza.
-    Expect:  newPizza() to become object Pizza with properties {size=s,m,l, toppings=[t1,t2,t3,t4], base cost: 10}
-        Results: WORKING!
+Test: adds 5 dollars for Large size and adds to base cost of 10 and +1 for every selected topping
+expect newPizza(size:large, toppings:pepperoni, total:0).toEqual(newPizza (size:large, toppings:pepperoni, total:16)
 
-Test: Take customer order and run it through calculateOrder prototype. Takes base cost for Pizza and then adds  the cost of the chosen size + value amount of each topping to give us our total cost. 
-    Expect: baseCost.Equals(10) + SmallPizza.val(1) + x4Toppings.val(1each) = total (15)
-        Result: Works!
-
-Test: Output to show customers selected size, toppings and total cost for their order under the menu.
-    Expect: (OrderResults).toDisplay "You have order 'pizza size'  with t1,t2,t3,t4!  Total: (total cost). "
-        Results: Works!
 ```
 
 # License 
